@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ullas Incense - Chatbot Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Ullas Incense</h1>
+        <p>Experience the finest incense products from India</p>
+    </div>
+
+    <!-- Chat Widget Container -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <div class="chat-title">Ullasini</div>
+            <button class="close-chat" id="closeChat">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="quick-replies" id="quickReplies"></div>
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+            <button class="send-button" id="sendButton">Send</button>
+        </div>
+        <div class="chat-powered-by">Powered by Ullas Incense</div>
+    </div>
+
+    <!-- Floating Button -->
+    <div class="chat-floating-button" id="floatingButton">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+            <path d="M13 7h-2v5.414l3.29 3.29 1.41-1.41L13 11.586z"/>
+        </svg>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>
