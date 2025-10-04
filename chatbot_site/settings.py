@@ -6,7 +6,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "django-insecure-replace-this"
 DEBUG = True
-ALLOWED_HOSTS = ["44f0559db1e1.ngrok-free.app","localhost","127.0.0.1",]
+# ALLOWED_HOSTS = ["44f0559db1e1.ngrok-free.app","localhost","127.0.0.1","https://chatbot-project-bp5b.onrender.com/"]
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
